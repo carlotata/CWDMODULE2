@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWD MODULE 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <form>
+            <h2>REGISTER NOW!</h2>
+
+            <div class="row" style="margin-top: 2rem;">
+            <label for="firstname"></label>
+            <input type="text" id="firstname" placeholder="FIRST NAME" required style="width:12rem; height: 2rem;border-radius: 10px;">
+            <label for="lastname"></label>
+            <input type="text" id="lastname" placeholder="LAST NAME" required style="width:12rem;height: 2rem ;border-radius: 10px;">
+            </div>
+
+
+            <div class="workshop" style="margin-top: 2rem; text-align: center;">
+                <h4>Preferred Workshop:</h4>
+            <input type="checkbox" name="checkbox" id="Welding">
+            <label for="checkbox">Welding</label>
+            <input type="checkbox" name="checkbox" id="Wood-work">
+            <label for="checkbox">Wood-work</label>
+            <input type="checkbox" name="checkbox" id="Painting">
+            <label for="checkbox">Painting</label>
+            </div>
+
+            <div class="attendance" style="margin-top: 2rem; text-align: center;" >
+                <h4>ATTENDANCE CHECK</h4>
+                <input type="radio" name="attend" id="attend" required>
+                <label for="attend">Yes</label>
+                <input type="radio" name="attend" id="not-attend" required>
+                <label for="not-attend">No</label>
+            </div>
+
+            <footer style="padding: 1rem; margin-top: 1rem;">
+            <h3 style="text-align: center;">ABOUT YOURSELF</h3>
+            
+            <label for="comment"></label>
+            <input type="text" id="comment" placeholder="Tell us about yourself..." style="border-radius: 20px;">
+
+            <div class="column" style="display: flex; justify-content: center; margin-top: 1rem;">
+            <div class="country" style="margin-top: 1rem;">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+            <option value="USA">USA</option>
+            <option value="Canada">Philippines</option>
+            <option value="UK">UK</option>
+            </select>
+            </div>
+
+            <div class="Gender" style="margin-top: 1rem; margin-left: 1rem;">
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+            </select>
+            </div>
+            </div>
+
+            <div class="resume" style="margin-top: 2rem;">
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+            
+            <div class="submit" style="margin-top: 1rem;">
+            <button id="submit">REGISTER</button>
+            </div>
+            </div>
+            </footer>
+
+        </form>
+    </div>
+</body>
+</html>
